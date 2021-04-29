@@ -30,7 +30,9 @@
 
       <div class="col-lg-9 single-left">
         <div class="single-left1">
+          @if($page->image)
           <img src="{{$page->image}}" alt="{{$page->title}}" class="img-fluid"/>
+          @endif
           <ul class="blog_list my-3 text-center">
             <li>{{$page->updated_at}}</li>
           </ul>
