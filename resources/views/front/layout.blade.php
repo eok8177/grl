@@ -2,12 +2,12 @@
 <html lang="ua">
 
 <head>
-  <title>{{ config('app.name', 'Гопри РЛ') }}</title>
+  <title>{{ config('app.name', 'Голопристанська районна лікарня') }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <link rel="stylesheet" href="/css/front.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/front.css?v={{time()}}" type="text/css" media="all" />
 
   <link rel="stylesheet" href="/css/fontawesome-all.css">
 
@@ -113,16 +113,13 @@
             <div class="nav-w3-l">
               <ul class="list-unstyled">
                 <li><a href="/about">Про нас</a></li>
-                {{-- <li class="mt-2"><a href="{ name: 'Category' }">Котегории статей</a></li> --}}
-                {{-- <li class="mt-2"><a href="{ name: 'Gallery' }">Галерея</a></li> --}}
-                {{-- <li class="mt-2"><a href="{ name: 'Post' }">Стаття</a></li> --}}
                 <li class="mt-2"><a href="/contact">Контакти</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="border-top mt-2 pt-lg-1 pt-1 pb-lg-0 pb-1 text-center">
-          <p class="copy-right-grids mt-lg-1">© 2019 All Rights Reserved | Develop by
+          <p class="copy-right-grids mt-lg-1">© 2021 All Rights Reserved | Develop by
             <a href="https://ek.ks.ua/" target="_blank">Evgen</a>
           </p>
         </div>
@@ -131,7 +128,7 @@
   </footer>
 
 
-  <script src="/js/front.js"></script>
+  <script src="/js/front.js?v={{time()}}"></script>
 
   <!-- smooth scrolling -->
   <script src="/js/SmoothScroll.min.js"></script>

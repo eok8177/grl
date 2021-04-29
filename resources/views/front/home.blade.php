@@ -155,7 +155,7 @@
             </div>
             <div class="row wthree_agile_us my-3">
               <div class="col-9 agile-why-text-2">
-                <h4 class="text-dark font-weight-bold">Анастезіологічне</h4>
+                <h4 class="text-dark font-weight-bold">Анестезіологічне</h4>
               </div>
               <div class="col-3 agile-why-text p-0">
                 <div class="wthree_features_grid">
