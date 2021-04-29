@@ -98,7 +98,7 @@
               </li>
               <li class="my-3">
                 <i class="fas fa-phone float-left"></i>
-                <p class="ml-4">1234567890</p>
+                <p class="ml-4">(05539) 2-62-35</p>
                 <div class="clearfix"></div>
               </li>
               <li>
