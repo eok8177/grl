@@ -40,7 +40,7 @@
         <div class="row inner-sec-w3layouts-agileinfo">
 
           @foreach($doctors as $doctor)
-          <div class="col-md-4 team-grids text-center">
+          <div class="col-md-4 team-grids text-center mb-4">
             <img src="/resize/340/388?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
             <div class="team-info">
               <div class="caption">

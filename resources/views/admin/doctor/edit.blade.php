@@ -8,9 +8,11 @@
 
   <div class="card-body">
 
-    {!! Form::open(['route' => ['admin.doctor.update', $page->id], 'method' => 'PUT']) !!}
+    <form action="{{route('admin.doctor.update', $page)}}" method="POST">
+      <input name="_method" type="hidden" value="PUT">
+      @csrf
       @include('admin.doctor.form')
-    {!! Form::close() !!}
+    </form>
 
   </div>
 </div>

@@ -32,7 +32,7 @@
 <div class="toggle-switch" data-ts-color="primary">
   <input type="hidden" name="published" value="0">
   <label for="published" class="ts-label">@lang('message.published')</label>
-  <input type="checkbox" name="published" id="published" value="{{$page->published}}">
+  <input type="checkbox" name="published" id="published" {{$page->published ? 'checked' : ''}} value="1">
   <label for="published" class="ts-helper"></label>
 </div>
 

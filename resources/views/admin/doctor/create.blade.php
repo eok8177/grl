@@ -8,9 +8,10 @@
 
   <div class="card-body">
 
-    {!! Form::open(['route' => ['admin.doctor.store'], 'method' => 'POST']) !!}
+    <form action="{{route('admin.doctor.store')}}" method="POST">
+      @csrf
       @include('admin.doctor.form')
-    {!! Form::close() !!}
+    </form>
 
   </div>
 </div>

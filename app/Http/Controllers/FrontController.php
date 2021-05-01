@@ -39,7 +39,7 @@ class FrontController extends Controller
             ->get();
 
         $doctors = Doctor::where('published', 1)
-            ->orderBy('id', 'asc')
+            ->orderBy('order', 'asc')
             ->get();
 
         return view('front.about', [

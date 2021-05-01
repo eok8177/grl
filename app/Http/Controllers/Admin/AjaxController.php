@@ -13,9 +13,9 @@ class AjaxController extends Controller
         if($request->ajax()){
 
             if ($request->input('model') == 'User') {
-                $model = "App\User";
+                $model = "App\Models\User";
             } else {
-                $model = "App\Model\\" . $request->input('model');
+                $model = "App\Models\\" . $request->input('model');
             }
 
             $field = $request->input('field');
@@ -40,9 +40,9 @@ class AjaxController extends Controller
         if($request->ajax()){
 
             if ($request->input('model') == 'User') {
-                $model = "App\User";
+                $model = "App\Models\User";
             } else {
-                $model = "App\Model\\" . $request->input('model');
+                $model = "App\Models\\" . $request->input('model');
             }
 
             $order = $request->input('order');
