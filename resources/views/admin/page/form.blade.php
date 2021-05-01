@@ -2,14 +2,18 @@
 <div class="form-group row">
   <label for="category" class="col-sm-2 col-form-label">@lang('message.category')</label>
   <div class="col-sm-10">
-    {!! Form::select('category_id', $page->categories(), $page->category_id, ['class' => 'form-control']) !!}
+    <select name="category_id" class="form-control">
+      @foreach($page->categories() as $cat_id => $cat_title)
+        <option value="{{$cat_id}}" {{$page->category_id == $cat_id ? 'selected' : ''}}>{{$cat_title}}</option>
+      @endforeach
+    </select>
   </div>
 </div>
 
 <div class="form-group row">
   <label for="title" class="col-sm-2 col-form-label">@lang('message.title')</label>
   <div class="col-sm-10">
-    {!! Form::text('title', $page->title, ['class' => 'form-control']) !!}
+    <input type="text" name="title" class="form-control" value="{{$page->title}}">
   </div>
 </div>
 
@@ -30,22 +34,22 @@
 <div class="form-group row">
   <label for="preview" class="col-sm-2 col-form-label">@lang('message.preview')</label>
   <div class="col-sm-10">
-    {!! Form::textarea('preview', $page->preview, ['class' => 'form-control', 'rows' => '2']) !!}
+    <textarea name="preview" class="form-control editor" rows="2">{{ $page->preview }}</textarea>
   </div>
 </div>
 
 <div class="form-group row">
   <label for="content" class="col-sm-2 col-form-label">@lang('message.content')</label>
   <div class="col-sm-10">
-    {!! Form::textarea('content', $page->content, ['class' => 'form-control']) !!}
+    <textarea name="content" class="form-control editor" rows="2">{{ $page->content }}</textarea>
   </div>
 </div>
 
 
 <div class="toggle-switch" data-ts-color="primary">
-  {!! Form::hidden('published', 0) !!}
+  <input type="hidden" name="published" value="0">
   <label for="published" class="ts-label">@lang('message.published')</label>
-  {!! Form::checkbox('published', 1, $page->published, ['id' => 'published']) !!}
+  <input type="checkbox" name="published" id="published" {{$page->published ? 'checked' : ''}} value="1">
   <label for="published" class="ts-helper"></label>
 </div>
 
@@ -54,7 +58,7 @@
 <div class="form-group row">
   <label for="slug" class="col-sm-2 col-form-label">@lang('message.slug')</label>
   <div class="col-sm-10">
-    {!! Form::text('slug', $page->slug, ['class' => 'form-control', 'placeholder' => Lang::get('message.gen_auto')]) !!}
+    <input type="text" name="slug" class="form-control" value="{{$page->slug}}" placeholder="{{Lang::get('message.gen_auto')}}">
   </div>
 </div>
 

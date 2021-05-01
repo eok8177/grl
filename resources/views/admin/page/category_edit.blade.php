@@ -8,9 +8,11 @@
 
   <div class="card-body">
 
-    {!! Form::open(['route' => ['admin.page-category.update', $category->id], 'method' => 'PUT']) !!}
+    <form action="{{route('admin.page-category.update', $category)}}" method="POST">
+      <input name="_method" type="hidden" value="PUT">
+      @csrf
       @include('admin.page.category_form')
-    {!! Form::close() !!}
+    </form>
 
   </div>
 </div>

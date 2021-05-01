@@ -17,7 +17,5 @@ mix.options({
 
 mix
     .js('resources/js/front.js', 'public/js')
-    // .postCss('resources/css/app.css', 'public/css', [
-        //
-    // ])
+    .js('resources/js/admin.js', 'public/js')
     .sass('resources/css/front.scss', 'public/css');

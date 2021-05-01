@@ -1,20 +1,25 @@
-$(function () {
-// ---------- Methods ---------- //
+try {
+    window.Popper = require('popper.js').default;
+    window.$ = window.jQuery = require('jquery');
 
-    $.ajaxSetup({
-      headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-      }
-    });
+    require('jquery-sortable');
+    require('bootstrap');
+
+} catch (e) {}
+
+$(function () {
 
     // CK Editor
     var options = {
-      filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-      filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token='+ $('meta[name="csrf-token"]').attr('content'),
-      filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-      filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='+ $('meta[name="csrf-token"]').attr('content')
+      filebrowserImageBrowseUrl: '/ru/lfm?type=Images',
+      filebrowserImageUploadUrl: '/ru/lfm/upload?type=Images&_token='+ $('meta[name="csrf-token"]').attr('content'),
+      filebrowserBrowseUrl: '/ru/lfm?type=Files',
+      filebrowserUploadUrl: '/ru/lfm/upload?type=Files&_token='+ $('meta[name="csrf-token"]').attr('content'),
+      allowedContent: true,
+      extraAllowedContent: 'section(*); div(*); video(*); object(*)'
     };
-    $('textarea').ckeditor(options);
+    $('.editor').ckeditor(options);
+
 
     //laravel file manager
     $('#lfm').filemanager('image');
@@ -60,7 +65,5 @@ $(function () {
           }
       });
     });
-
-
 
 });

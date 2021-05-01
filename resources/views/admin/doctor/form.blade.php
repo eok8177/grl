@@ -32,7 +32,7 @@
 <div class="form-group row">
   <label for="text" class="col-sm-2 col-form-label">@lang('message.description')</label>
   <div class="col-sm-10">
-    <textarea name="text" class="form-control" rows="2">{{ $page->text }}</textarea>
+    <textarea name="text" class="form-control editor" rows="2">{{ $page->text }}</textarea>
   </div>
 </div>
 

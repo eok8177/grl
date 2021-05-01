@@ -117,17 +117,12 @@
 
   {{--  FOOTER  --}}
 
-<!-- Scripts -->
-<script src="{{ asset('admin/js/jquery.min.js') }}"></script>
-<script src="{{ asset('admin/js/popper.min.js') }}"></script>
-<script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/admin.js') }}"></script>
 <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
 <script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script>
-{{-- <script src="{{ asset('vendor/laravel-filemanager/js/lfm.js') }}"></script> --}}
+<script src="{{ asset('vendor/laravel-filemanager/js/lfm.js') }}"></script>
 <script src="{{ asset('vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>
 
-<script src="{{ asset('vendor/jquery-sortable.min.js') }}"></script>
-<script src="{{ asset('admin/js/app.js') }}"></script>
 
 <script>
   $(function () {

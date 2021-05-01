@@ -1,14 +1,16 @@
 <div class="form-group row">
   <label for="title" class="col-sm-2 col-form-label">@lang('message.title')</label>
   <div class="col-sm-10">
-    {!! Form::text('title', $category->title, ['class' => 'form-control']) !!}
+    <input type="text" name="title" class="form-control" value="{{$category->title}}">
   </div>
 </div>
 
 <div class="form-group row">
   <label for="image" class="col-sm-2 col-form-label">@lang('message.image')</label>
   <div class="col-sm-10">
-    <img id="holder" style="margin-top:15px;max-height:100px;" src="{{ $category->image }}">
+    <div id="holder" style="margin-top:15px;">
+      <img src="/resize/0/100/?img={{urlencode($category->image)}}">
+    </div>
     <a id="lfm" data-input="thumbnail" data-preview="holder" class="lfm btn btn-primary">
       <i class="icon icon-picture"></i> @lang('message.select')
     </a>
@@ -22,14 +24,14 @@
 <div class="form-group row">
   <label for="description" class="col-sm-2 col-form-label">@lang('message.description')</label>
   <div class="col-sm-10">
-    {!! Form::textarea('description', $category->description, ['class' => 'form-control']) !!}
+    <textarea name="description" class="form-control" rows="2">{{ $category->description }}</textarea>
   </div>
 </div>
 
 <div class="toggle-switch" data-ts-color="primary">
-  {!! Form::hidden('published', 0) !!}
+  <input type="hidden" name="published" value="0">
   <label for="published" class="ts-label">@lang('message.published')</label>
-  {!! Form::checkbox('published', 1, $category->published, ['hidden' => 'hidden', 'id' => 'published']) !!}
+  <input type="checkbox" name="published" id="published" {{$category->published ? 'checked' : ''}} value="1">
   <label for="published" class="ts-helper"></label>
 </div>
 
@@ -38,7 +40,7 @@
 <div class="form-group row">
   <label for="slug" class="col-sm-2 col-form-label">@lang('message.slug')</label>
   <div class="col-sm-10">
-    {!! Form::text('slug', $category->slug, ['class' => 'form-control', 'placeholder' => Lang::get('message.gen_auto')]) !!}
+    <input type="text" name="slug" class="form-control" value="{{$category->slug}}" placeholder="{{Lang::get('message.gen_auto')}}">
   </div>
 </div>
 
