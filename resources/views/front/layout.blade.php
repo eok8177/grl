@@ -120,7 +120,7 @@
         </div>
         <div class="border-top mt-2 pt-lg-1 pt-1 pb-lg-0 pb-1 text-center">
           <p class="copy-right-grids mt-lg-1">© 2021 All Rights Reserved | Develop by
-            <a href="https://www.linkedin.com/in/evgen-k-84351b105" target="_blank">Evgen</a>
+            <a href="https://www.linkedin.com/in/evgen-koromyslov-84351b105/" target="_blank">Evgen</a>
           </p>
         </div>
       </div>
