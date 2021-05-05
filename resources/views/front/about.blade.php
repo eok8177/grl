@@ -21,7 +21,7 @@
 <section class="about">
   <div class="container py-xl-5 py-lg-3">
     <div class="w3ls-titles text-center mb-md-5 mb-4">
-      <h3 class="title">Голопристанська ЦРЛ</h3>
+      <h3 class="title">Голопристанська районна лікарня</h3>
       <span>
         <i class="fas fa-user-md"></i>
       </span>
