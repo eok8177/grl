@@ -18,9 +18,9 @@
 </div>
 
 
-<div class="container py-5">
+<div class="container py-3">
 
-  <div class="w3ls-titles text-center mb-md-5 mb-4">
+  <div class="w3ls-titles text-center mb-2">
     <h3 class="title">{{$category->title}}</h3>
     <span>
       <i class="fas fa-user-md"></i>
@@ -36,19 +36,17 @@
 
           @foreach($category->pages as $page)
           <div class="row post">
-            <div class="col-3">
+            <div class="col-md-3 mb-3">
               <a href="{{route('front.page', $page->slug)}}">
                 <img src="{{$page->image}}" alt="{{$page->title}}" class="img-thumbnail" />
               </a>
             </div>
-            <div class="mt-3 col-8">
+            <div class="col-md-9 mb-3">
               <a href="{{route('front.page', $page->slug)}}">
                 <h4>{{$page->title}}</h4>
+                <div class="text-body">{!! $page->preview !!}</div>
+                <small class="text-muted">{{$page->updated_at}}</small>
               </a>
-              <h5>{{$page->updated_at}}</h5>
-              <p>
-                {!! $page->preview !!}
-              </p>
             </div>
           </div>
           @endforeach

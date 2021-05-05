@@ -17,18 +17,15 @@
   </div>
 </div>
 
-<div class="w3ls-welcome py-5">
-  <div class="container py-xl-5 py-lg-3">
+<div class="w3ls-welcome py-3">
+  <div class="container py-xl-3 py-lg-3">
 
-    <div class="w3ls-titles text-center mb-md-5 mb-4">
+    <div class="w3ls-titles text-center mb-md-4 mb-3">
       <h3 class="title">Контактні телефони</h3>
-      <span>
-        <i class="fas fa-user-md"></i>
-      </span>
     </div>
 
     <div class="table-responsive">
-      <table class="table table-hover">
+      <table class="table table-hover table-sm">
         <tr><td>Головний лікар: Житнюк Владислав Вадимович</td><td><b>05539 2-62-35</b></td></tr>
         <tr><td>Реєстратура поліклініки</td><td><b>05539 7-86-60</b></td></tr>
         <tr><td>Кабінет нарколога, психіатра</td><td><b>05539 7-86-44</b></td></tr>

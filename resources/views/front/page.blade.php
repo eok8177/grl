@@ -20,25 +20,27 @@
   </div>
 </div>
 
-<div class="single-w3l py-5">
-  <div class="container py-xl-5 py-lg-3">
-    <div class="w3ls-titles text-center mb-5">
+<div class="single-w3l py-3">
+  <div class="container py-xl-2 py-lg-2">
+    <div class="w3ls-titles text-center mb-4">
       <h3 class="title">{{$page->title}}</h3>
     </div>
 
     <div class="row inner_sec_info">
 
       <div class="col-lg-9 single-left">
-        <div class="single-left1">
-          @if($page->image)
-          <img src="{{$page->image}}" alt="{{$page->title}}" class="img-fluid"/>
-          @endif
-          <ul class="blog_list my-3 text-center">
-            <li>{{$page->updated_at}}</li>
-          </ul>
-          <p>{!! $page->preview !!}</p>
-          <p>{!! $page->content !!}</p>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            @if($page->image)
+            <img src="{{$page->image}}" alt="{{$page->title}}" class="img-thumbnail"/>
+            @endif
+          </div>
+          <div class="col-md-8">
+            <small class="text-muted">{{$page->updated_at}}</small>
+            <div>{!! $page->preview !!}</div>
+          </div>
         </div>
+        <p>{!! $page->content !!}</p>
       </div>
 
       <div class="col-lg-3 event-right mt-lg-0 mt-sm-5 mt-4">
