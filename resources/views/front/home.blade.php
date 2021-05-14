@@ -30,7 +30,7 @@
   <div class="container py-xl-5 py-lg-3">
     <div class="row">
       <div class="col-lg-5 welcome-right">
-        <img src="images/b2.png" alt=" " class="img-fluid">
+        <img src="images/b2.png" alt="Безкоштовна діагностика" class="img-fluid">
       </div>
       <div class="col-lg-7 welcome-left mt-4">
         <h3>Безкоштовна діагностика</h3>
@@ -110,7 +110,7 @@
         </div>
       </div>
       <div class="col-lg-4 agileits-w3layouts-grid img text-center">
-        <img src="images/b3.png" alt=" " class="img-fluid" />
+        <img src="images/b3.png" alt="Наші відділення" class="img-fluid" />
       </div>
       <div class="col-lg-4 agileits-w3layouts-grid">
         <div class="row wthree_agile_us">

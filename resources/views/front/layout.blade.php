@@ -7,6 +7,8 @@
   <meta charset="UTF-8" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
+  <meta name="description" content="З 1 липня за направленням сімейного лікаря українці зможуть проходити діагностику безкоштовно. Нововведення стосується понад 80% усіх досліджень." />
+
   <link rel="stylesheet" href="/css/front.css?v={{time()}}" type="text/css" media="all" />
 
   <link rel="stylesheet" href="/css/fontawesome-all.css">
