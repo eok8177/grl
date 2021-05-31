@@ -117,7 +117,7 @@
 
   {{--  FOOTER  --}}
 
-<script src="{{ asset('js/admin.js') }}"></script>
+<script src="{{ asset('js/admin.js') }}?v={{time()}}"></script>
 <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
 <script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script>
 <script src="{{ asset('vendor/laravel-filemanager/js/lfm.js') }}"></script>

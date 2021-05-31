@@ -11,10 +11,10 @@ $(function () {
 
     // CK Editor
     var options = {
-      filebrowserImageBrowseUrl: '/ru/lfm?type=Images',
-      filebrowserImageUploadUrl: '/ru/lfm/upload?type=Images&_token='+ $('meta[name="csrf-token"]').attr('content'),
-      filebrowserBrowseUrl: '/ru/lfm?type=Files',
-      filebrowserUploadUrl: '/ru/lfm/upload?type=Files&_token='+ $('meta[name="csrf-token"]').attr('content'),
+      filebrowserImageBrowseUrl: '/filemanager?type=Images',
+      filebrowserImageUploadUrl: '/filemanager/upload?type=Images&_token='+ $('meta[name="csrf-token"]').attr('content'),
+      filebrowserBrowseUrl: '/filemanager?type=Files',
+      filebrowserUploadUrl: '/filemanager/upload?type=Files&_token='+ $('meta[name="csrf-token"]').attr('content'),
       allowedContent: true,
       extraAllowedContent: 'section(*); div(*); video(*); object(*)'
     };
