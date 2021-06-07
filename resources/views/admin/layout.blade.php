@@ -187,7 +187,7 @@
             data: {order:data},
             type: 'PUT',
             dataType: 'json',
-            url: '{{route('admin.ajax.reorder')}}'+'?model='+$('.sorted_table').attr('model')
+            url: '/admin/ajax/reorder'+'?model='+$('.sorted_table').attr('model')
         });
 
         _super($item, container);
