@@ -39,7 +39,7 @@
         <div class="row inner-sec-w3layouts-agileinfo">
 
           @foreach($doctors as $doctor)
-          <div class="col-md-4 team-grids text-center mb-4" type="button" data-toggle="modal" data-target="#doctor_{{$doctor->id}}">
+          <div class="col-md-4 team-grids text-center mb-4" @if($doctor->text) type="button" data-toggle="modal" data-target="#doctor_{{$doctor->id}}" @endif>
             <img src="/resize/340/388?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
             <div class="team-info">
               <div class="caption">
