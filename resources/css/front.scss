@@ -242,35 +242,11 @@ a.login-button:hover {
 }
 
 /* //login button */
-/* modal */
-.modal-content {
-    background: url(../images/bg1.jpg) no-repeat left;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    padding-bottom: 2em;
-}
-
-.modal-content.modal-content-2 {
-    background-position: -18px -33px;
-}
-
-.modal-header {
-    border-bottom: none;
-}
 
 .form-control {
     border-radius: 0px
 }
 
-.modal-body h5 {
-    color: $white;
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin-left: 4em;
-}
 
 p.account-w3ls {
     color: #dadada;
@@ -2168,10 +2144,6 @@ label.col-form-label {
         top: 85%;
         right: 78%;
     }
-
-    .modal-body h5 {
-        margin-left: 1em;
-    }
 }
 
 @media(max-width: 384px) {
@@ -2358,11 +2330,6 @@ label.col-form-label {
 
     .callbacks_tabs {
         right: 71%;
-    }
-
-    .modal-body h5 {
-        font-size: 25px;
-        margin-left: 0em;
     }
 }
 

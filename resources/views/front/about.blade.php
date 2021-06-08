@@ -35,33 +35,40 @@
           <span>
             <i class="fas fa-user-md"></i>
           </span>
-          <!-- <p class="mt-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
         </div>
         <div class="row inner-sec-w3layouts-agileinfo">
 
           @foreach($doctors as $doctor)
-          <div class="col-md-4 team-grids text-center mb-4">
+          <div class="col-md-4 team-grids text-center mb-4" type="button" data-toggle="modal" data-target="#doctor_{{$doctor->id}}">
             <img src="/resize/340/388?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
             <div class="team-info">
               <div class="caption">
                 <h4>{{$doctor->title}}</h4>
                 <h6>{{$doctor->work}}</h6>
               </div>
-              {{-- <div class="social-icons-section d-none">
-                <a class="fac" href="#">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a class="twitter" href="#">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-                <a class="pinterest" href="#">
-                  <i class="fab fa-pinterest"></i>
-                </a>
-
-              </div> --}}
-
             </div>
           </div>
+
+          @if($doctor->text)
+          <div class="modal fade" id="doctor_{{$doctor->id}}" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="card">
+                  <img src="/resize/500/0?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
+                  <div class="card-body">
+                    {!! $doctor->text !!}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endif
+
           @endforeach
 
         </div>
