@@ -89,16 +89,16 @@
           </div>
         </div>
         <div class="row wthree_agile_us my-3">
-          <div class="col-3 agile-why-text p-0 text-right">
+          <div class="col-3 agile-why-text p-0 text-right mt-3">
             <div class="wthree_features_grid">
               <i class="fab fa-medrt"></i>
             </div>
           </div>
-          <div class="col-9 agile-why-text-2">
-            <h4 class="text-dark font-weight-bold">Гінекологічне</h4>
-          </div>
+          <a class="col-9 agile-why-text-2" href="/ginekologichne">
+            <h4 class="text-dark font-weight-bold">Акушерсько-гінекологічне</h4>
+          </a>
         </div>
-        <div class="row wthree_agile_us my-3">
+{{--         <div class="row wthree_agile_us my-3">
           <div class="col-3 agile-why-text p-0 text-right">
             <div class="wthree_features_grid">
               <i class="fas fa-user-md"></i>
@@ -107,7 +107,7 @@
           <div class="col-9 agile-why-text-2">
             <h4 class="text-dark font-weight-bold">Пологове</h4>
           </div>
-        </div>
+        </div> --}}
       </div>
       <div class="col-lg-4 agileits-w3layouts-grid img text-center">
         <img src="images/b3.png" alt="Наші відділення" class="img-fluid" />

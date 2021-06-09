@@ -46,4 +46,6 @@ Route::group([
 
     Route::get('/pages/{slug}', 'FrontController@pages')->name('pages');
     Route::get('/page/{slug}', 'FrontController@page')->name('page');
+
+    Route::view('/ginekologichne', 'front.vidd.ginekolog');
 });
