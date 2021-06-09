@@ -33,7 +33,7 @@
 
         <div class="clearfix mb-2">
             <h5 class="text-center mt-3 mb-2">Передпологова палата.</h5>
-            <img src="/images/ginekologia/01.jpg" class="img-fluid rounded float-left mr-3" style="max-width: 270px">
+            <img src="/images/ginekologia/01.jpg" class="img-fluid rounded float-left mr-3" style="width: 346px">
             <p class="text-justify mb-3">З початком пологової діяльності вагітна жінка потребує особливої уваги та допомоги. Для цього в пологовому залі є фітнес – м’яч, шведська стінка, стільчик для проведення вертикальних пологів, необхідна атмосфера. Жінка знаходиться під наглядом лікарів акушер-гінекологів та акушерок.
         </div>
 
@@ -51,7 +51,7 @@
         <div class="clearfix mb-2">
             <h5 class="text-center mt-3 mb-2">Післяпологова палата спільного перебування матері та дитини.</h5>
 
-            <img src="/images/ginekologia/04.jpg" class="img-fluid rounded float-left mr-3" style="max-width: 800px">
+            <img src="/images/ginekologia/04.jpg" class="img-fluid rounded float-left mr-3" style="width: 800px">
 
             <p class="text-justify mb-3">Відділення вміщує комфортні палати спільного перебування матері та дитини. Перші дні знайомства між матір’ю та дитиною відбувається під наглядом медичного персоналу, який допомагає при грудному вигодовуванні та догляду за новонародженим.
         </div>
@@ -74,7 +74,7 @@
             <p class="text-justify mb-3">Персонал інтенсивної терапії новонароджених надає кваліфіковану реанімаційну допомогу дітям, які народилися хворими або захворіли у ранньому неонатальному віці.
         </div>
         <div class="clearfix mb-2">
-            <img src="/images/ginekologia/10.jpg" class="img-fluid rounded float-left mr-3" style="max-width: 600px">
+            <img src="/images/ginekologia/10.jpg" class="img-fluid rounded float-left mr-3" style="width: 600px">
             <p class="text-justify mb-3">Палата інтенсивної терапії новонароджених обладнана апаратурою для респіраторної підтримки, проведення парентерального харчування, забезпечення венозного доступу, постійний моніторинг життєво важливих функцій, забезпечення максимально комфортних умов для дитини в інкубаторах інтенсивної терапії з контролем температури та вологості, фототерапії новонароджених, проведення ентерального годування з використанням спеціалізованих і лікувальних сумішей.
         </div>
 
