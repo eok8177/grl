@@ -51,6 +51,7 @@ a {
     text-decoration: none;
     color: $green;
     &:hover {
+        opacity: 0.5;
         text-decoration: none;
         transition: 0.5s all;
     }
