@@ -7,7 +7,7 @@
   <meta charset="UTF-8" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <meta name="description" content="З 1 липня за направленням сімейного лікаря українці зможуть проходити діагностику безкоштовно. Нововведення стосується понад 80% усіх досліджень." />
+  <meta name="description" content="Голопристанська районна лікарня" />
 
   <link rel="stylesheet" href="/css/front.css?v={{time()}}" type="text/css" media="all" />
 
@@ -64,14 +64,6 @@
                     <a href="{{route('front.pages', $category->slug)}}" class="dropdown-item">{{$category->title}}</a>
                   @endforeach
 
-                  <!-- <a href="{ name: 'Category' }" class="dropdown-item">Котегории статей</a> -->
-
-                  <!-- <div class="dropdown-divider"></div> -->
-
-                  <!-- <a href="{ name: 'Gallery' }" class="dropdown-item">Галерея</a> -->
-
-                  <!-- <div class="dropdown-divider"></div> -->
-                  <!-- <a href="{ name: 'Post' }" class="dropdown-item">Стаття</a> -->
                 </div>
               </li>
               <li class="nav-item mx-lg-4 my-lg-0 my-3" active-class="active">
@@ -140,11 +132,6 @@
 
 
   <script src="/js/front.js?v={{time()}}"></script>
-
-  <!-- smooth scrolling -->
-  <script src="/js/SmoothScroll.min.js"></script>
-
-
   @stack('scripts')
 </body>
 
