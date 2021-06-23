@@ -84,9 +84,9 @@
               <i class="fas fa-syringe"></i>
             </div>
           </div>
-          <div class="col-9 agile-why-text-2">
+          <a class="col-9 agile-why-text-2" href="/dutyache">
             <h4 class="text-dark font-weight-bold">Дитяче</h4>
-          </div>
+          </a>
         </div>
         <div class="row wthree_agile_us my-3">
           <div class="col-3 agile-why-text p-0 text-right mt-3">
