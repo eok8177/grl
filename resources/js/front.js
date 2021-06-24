@@ -15,14 +15,44 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 $(document).ready(function () {
 
-     // script for smooth scrolling //
-
-    // $('body').on('click', '.scroll', function (event) {
-    //     event.preventDefault();
-
-    //     $('html,body').animate({
-    //         scrollTop: $(this.hash).offset().top
-    //     }, 1000);
-    // });
+    //Submit ajax form
+    $('.feedback-form').submit(function(e){
+      e.preventDefault();
+      let form = $(this);
+      // if (validateForm(form))
+        postForm(form, function(response) {
+          console.log(response);
+          form.trigger("reset");
+          formSuccessMsg(form);
+        });
+      return false;
+    }); 
 
 });
+
+function postForm($form, callback) {
+  /*
+   * Get all form values
+   */
+  var values = {};
+  $.each( $form.serializeArray(), function(i, field) {
+    values[field.name] = field.value;
+  });
+  $form.find('.btn-submit').attr('disabled',true);
+ 
+  /*
+   * Throw the form values to the server!
+   */
+  $.ajax({
+    type        : $form.attr( 'method' ),
+    url         : $form.attr( 'action' ),
+    data        : values,
+    success     : function(data) {
+      callback(data);
+    }
+  }); 
+}
+
+function formSuccessMsg(form) {
+  form.find('.success').show();
+}

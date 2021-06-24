@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Mail;
 
 use App\Models\Doctor;
 use App\Models\Page;
@@ -74,6 +75,24 @@ class FrontController extends Controller
             'page' => $page,
             'categories' => $categories
         ]);
+    }
+
+
+    public function email(Request $request)
+    {
+        $msg['first_name'] = $request->get('first_name', false);
+        $msg['last_name'] = $request->get('last_name', false);
+        $msg['email'] = $request->get('email', false);
+        $msg['subject'] = $request->get('subject', false);
+        $msg['text'] = $request->get('text', false);
+
+        Mail::send('email.feedback', ['msg' => $msg], function ($m) use ($msg) {
+          $m->from('info@goprirl.org', 'goprirl.org');
+
+          $m->to('goprycrb@gmail.com','Сайт')->subject('Сообщение с сайта: '.$msg['subject']);
+        });
+
+        return 'success';
     }
 
 }
