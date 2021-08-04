@@ -54,7 +54,7 @@ class FrontController extends Controller
         $category = PageCategory::where('slug', $slug)->firstOrFail();
 
         $categories = PageCategory::where('published', 1)
-            ->orderBy('id', 'asc')
+            ->orderBy('updated_at', 'desc')
             ->get();
 
         return view('front.pages', [
@@ -68,7 +68,7 @@ class FrontController extends Controller
         $page = Page::where('slug', $slug)->firstOrFail();
 
         $categories = PageCategory::where('published', 1)
-            ->orderBy('id', 'asc')
+            ->orderBy('updated_at', 'desc')
             ->get();
 
         return view('front.page', [
