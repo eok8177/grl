@@ -49,6 +49,7 @@ Route::group([
 
     Route::view('/ginekologichne', 'front.vidd.ginekolog');
     Route::view('/dutyache', 'front.vidd.detskoe');
+    Route::view('/endo', 'front.vidd.endo');
 
     Route::post('/email', 'FrontController@email')->name('email');
 });
