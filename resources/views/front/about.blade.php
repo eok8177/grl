@@ -59,7 +59,7 @@
                   </button>
                 </div>
                 <div class="card">
-                  <img src="/resize/500/0?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
+                  {{-- <img src="/resize/500/0?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" /> --}}
                   <div class="card-body">
                     {!! $doctor->text !!}
                   </div>
