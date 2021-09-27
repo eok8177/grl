@@ -294,6 +294,9 @@ button.submit:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    @media(max-width:767px) {
+        height: 60vw;
+    }
 }
 
 
