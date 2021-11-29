@@ -36,7 +36,7 @@
             @endif
           </div>
           <div class="col-md-8">
-            <small class="text-muted">{{$page->updated_at}}</small>
+            {{-- <small class="text-muted">{{$page->updated_at}}</small> --}}
             <div>{!! $page->preview !!}</div>
           </div>
         </div>

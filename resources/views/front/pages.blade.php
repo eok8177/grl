@@ -45,7 +45,7 @@
               <a href="{{route('front.page', $page->slug)}}">
                 <h4>{{$page->title}}</h4>
                 <div class="text-body">{!! $page->preview !!}</div>
-                <small class="text-muted">{{$page->updated_at}}</small>
+                {{-- <small class="text-muted">{{$page->updated_at}}</small> --}}
               </a>
             </div>
           </div>
