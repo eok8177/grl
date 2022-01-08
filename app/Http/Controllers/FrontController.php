@@ -87,9 +87,9 @@ class FrontController extends Controller
         $msg['text'] = $request->get('text', false);
 
         Mail::send('email.feedback', ['msg' => $msg], function ($m) use ($msg) {
-          $m->from('info@goprirl.org', 'goprirl.org');
+          $m->from(env('MAIL_FROM_ADDRESS'), 'goprirl.org');
 
-          $m->to('goprycrb@gmail.com','Сайт')->subject('Сообщение с сайта: '.$msg['subject']);
+          $m->to(env('MAIL_FROM_ADDRESS'),'Сайт')->subject('Сообщение с сайта: '.$msg['subject']);
         });
 
         return 'success';
