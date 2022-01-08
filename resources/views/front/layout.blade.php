@@ -9,7 +9,7 @@
 
   <meta name="description" content="Голопристанська районна лікарня" />
 
-  <link rel="stylesheet" href="/css/front.css?v={{time()}}" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/front.css?v=1.001" type="text/css" media="all" />
 
   <link rel="stylesheet" href="/css/fontawesome-all.css">
 
@@ -106,7 +106,7 @@
               </li>
               <li>
                 <i class="far fa-envelope-open float-left"></i>
-                <a href="mailto:goprycrb@gmail.com" class="ml-3">goprycrb@gmail.com</a>
+                <a href="mailto:info@goprirl.org" class="ml-3">info@goprirl.org</a>
                 <div class="clearfix"></div>
               </li>
             </ul>
@@ -123,7 +123,7 @@
         </div>
         <div class="border-top mt-2 pt-lg-1 pt-1 pb-lg-0 pb-1 text-center">
           <p class="copy-right-grids mt-lg-1">© 2021 All Rights Reserved | Develop by
-            <a href="https://www.linkedin.com/in/evgen-koromyslov-84351b105/" target="_blank">Evgen</a>
+            <a href="https://www.linkedin.com/in/evgen-koromyslov/" target="_blank">Evgen</a>
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@
   </footer>
 
 
-  <script src="/js/front.js?v={{time()}}"></script>
+  <script src="/js/front.js?v=1.001"></script>
   @stack('scripts')
 </body>
 
