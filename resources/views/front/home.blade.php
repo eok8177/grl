@@ -206,6 +206,35 @@
     </div>
   </div>
 </div>
+
+<section class="about">
+  <div class="container py-xl-5 py-lg-3">
+
+    <div class="w3ls-titles text-center mb-5">
+      <h3 class="title">Останні новини</h3>
+      <span>
+        <i class="fas fa-user-md"></i>
+      </span>
+      <!-- <p class="mt-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+    </div>
+
+
+    <div class="row about_grids mt-5">
+      @foreach($pages as $page)
+      <div class="col-lg-4" v-for="item in pages">
+        <img src="/resize/350/232?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
+        <h3 class="mt-3 text-dark" style="height: 56px;overflow: hidden;">{{$page->title}}</h3>
+        <p class="my-3" style="height: 60px;overflow: hidden;">{!! $page->preview !!}</p>
+        <a href="{{route('front.page', $page->slug)}}">Детальніше</a>
+      </div>
+      @endforeach
+    </div>
+
+
+  </div>
+</section>
+
+
 @endsection
 
 

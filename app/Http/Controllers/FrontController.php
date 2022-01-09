@@ -25,9 +25,17 @@ class FrontController extends Controller
             ->limit(3)
             ->get();
 
+        $pages = Page::with('category')
+            ->where('published', 1)
+            ->where('category_id', 5) //Новини
+            ->limit(3)
+            ->orderBy('id', 'desc')
+            ->get();
+
         return view('front.home', [
             'slides' => $slides,
-            'blog' => $blog
+            'blog' => $blog,
+            'pages' => $pages,
         ]);
     }
 
