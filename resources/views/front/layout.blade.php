@@ -116,7 +116,8 @@
             <div class="nav-w3-l">
               <ul class="list-unstyled">
                 <li><a href="/about">Про нас</a></li>
-                <li class="mt-2"><a href="/contact">Контакти</a></li>
+                <li class="mt-2"><a href="/pages/news">Новини</a></li>
+                <li class="mt-2"><a href="/pages/publichna-informaciya">Публічна інформація</a></li>
               </ul>
             </div>
           </div>
