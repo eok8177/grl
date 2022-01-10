@@ -126,9 +126,9 @@
       </div>
       <div class="col-lg-4 agileits-w3layouts-grid">
         <div class="row wthree_agile_us">
-          <div class="col-9 agile-why-text-2">
+          <a class="col-9 agile-why-text-2" href="/nevro">
             <h4 class="text-dark font-weight-bold">Неврологічне</h4>
-          </div>
+          </a>
           <div class="col-3 agile-why-text p-0">
             <div class="wthree_features_grid">
               <i class="fas fa-medkit"></i>
