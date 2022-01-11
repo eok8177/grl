@@ -21,6 +21,7 @@ class FrontController extends Controller
 
         $blog = Page::where('published', 1)
             ->where('category_id', 3) //Поради лікарів
+            ->orderBy('order', 'asc')
             ->orderBy('created_at', 'desc')
             ->limit(3)
             ->get();
@@ -29,7 +30,7 @@ class FrontController extends Controller
             ->where('published', 1)
             ->where('category_id', 5) //Новини
             ->limit(3)
-            ->orderBy('id', 'desc')
+            ->orderBy('order', 'asc')
             ->get();
 
         return view('front.home', [
@@ -44,7 +45,7 @@ class FrontController extends Controller
         $pages = Page::with('category')
             ->where('published', 1)
             ->limit(3)
-            ->orderBy('id', 'desc')
+            ->orderBy('order', 'asc')
             ->get();
 
         $doctors = Doctor::where('published', 1)
@@ -62,7 +63,7 @@ class FrontController extends Controller
         $category = PageCategory::where('slug', $slug)->firstOrFail();
 
         $categories = PageCategory::where('published', 1)
-            ->orderBy('updated_at', 'desc')
+            ->orderBy('order', 'asc')
             ->get();
 
         return view('front.pages', [
