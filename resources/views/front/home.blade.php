@@ -224,7 +224,7 @@
       <div class="col-lg-4" v-for="item in pages">
         <img src="/resize/350/232?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
         <h3 class="mt-3 text-dark" style="height: 56px;overflow: hidden;">{{$page->title}}</h3>
-        <p class="my-3" style="height: 60px;overflow: hidden;">{!! $page->preview !!}</p>
+        <div class="my-3" style="height: 60px;overflow: hidden;">{!! $page->preview !!}</div>
         <a href="{{route('front.page', $page->slug)}}">Детальніше</a>
       </div>
       @endforeach
