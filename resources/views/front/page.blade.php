@@ -28,6 +28,8 @@
 
     <div class="row inner_sec_info">
 
+      @if($page->wide == 0)
+
       <div class="col-lg-9 single-left">
         <div class="row mb-3">
           <div class="col-md-4">
@@ -84,6 +86,24 @@
 
         </div>
       </div>
+
+      @else
+
+      <div class="col-lg-12 single-left">
+        <div class="row mb-3">
+          <div class="col-md-4">
+            @if($page->image)
+            <img src="{{$page->image}}" alt="{{$page->title}}" class="img-thumbnail"/>
+            @endif
+          </div>
+          <div class="col-md-8">
+            <div>{!! $page->preview !!}</div>
+          </div>
+        </div>
+        <p>{!! $page->content !!}</p>
+      </div>
+
+      @endif
 
     </div>
 
