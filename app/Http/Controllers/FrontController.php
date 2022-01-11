@@ -63,7 +63,7 @@ class FrontController extends Controller
         $category = PageCategory::where('slug', $slug)->firstOrFail();
 
         $categories = PageCategory::where('published', 1)
-            ->orderBy('order', 'asc')
+            ->orderBy('updated_at', 'desc')
             ->get();
 
         return view('front.pages', [
