@@ -51,6 +51,7 @@ Route::group([
     Route::view('/dutyache', 'front.vidd.detskoe');
     Route::view('/endo', 'front.vidd.endo');
     Route::view('/nevro', 'front.vidd.nevro');
+    Route::view('/ait', 'front.vidd.ait');
 
     Route::post('/email', 'FrontController@email')->name('email');
 });

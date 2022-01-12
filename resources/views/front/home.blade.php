@@ -166,9 +166,9 @@
           </div>
         </div>
         <div class="row wthree_agile_us my-3">
-          <div class="col-9 agile-why-text-2">
+          <a class="col-9 agile-why-text-2" href="/ait">
             <h4 class="text-dark font-weight-bold">Анестезіологічне</h4>
-          </div>
+          </a>
           <div class="col-3 agile-why-text p-0">
             <div class="wthree_features_grid">
               <i class="fas fa-hospital"></i>
