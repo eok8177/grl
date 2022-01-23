@@ -27,7 +27,7 @@
 
           @foreach($page as $item)
           <tr data-id="{{$item->id}}">
-            <th scope="row">{{$item->id}}</th>
+            <td><i class="fa fa-arrows move" aria-hidden="true"></i></td>
             <td>
               <a href="{{ route('admin.doctor.edit', $item->id) }}" title="Edit"><i class="fa fa-edit"></i></a>
               &nbsp;&nbsp;&nbsp;

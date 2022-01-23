@@ -170,6 +170,7 @@
     left: 0;
     border-right: none;
   }
+  i.move {cursor: move;}
 </style>
 <script type="text/javascript">
   $(function  () {
@@ -179,6 +180,7 @@
       itemPath: '> tbody',
       itemSelector: 'tr',
       placeholder: '<tr class="placeholder"/>',
+      handle: 'i.move',
       onDrop: function ($item, container, _super) {
         var data = group.sortable("serialize").get()[0];
         // console.log(data);
