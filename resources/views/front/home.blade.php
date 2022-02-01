@@ -5,7 +5,7 @@
 
   @foreach($slides as $slide)
   <div class="banner-top" style='background-image: url("/resize/1905/768?img={{$slide->image}}"); width: 100%; display: flex; align-items: end;'>
-    <div class="banner-info_agile_w3ls">
+    <div class="banner-info_agile_w3ls container">
       <h3>{!! $slide->title !!}</h3>
       @if($slide->link)
       <a href="{{$slide->link}}" class="mt-2">Детальніше <i class="fa fa-caret-right ml-2" aria-hidden="true"></i></a>
