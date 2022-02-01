@@ -40,7 +40,7 @@
 
           @foreach($doctors as $doctor)
           <div class="col-md-4 team-grids text-center mb-4" @if($doctor->text) type="button" data-toggle="modal" data-target="#doctor_{{$doctor->id}}" @endif>
-            <img src="/resize/450/400?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
+            <img src="/resize/450/500?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
             <div class="team-info">
               <div class="caption">
                 <h4>{{$doctor->title}}</h4>
