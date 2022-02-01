@@ -6,7 +6,7 @@
   @foreach($slides as $slide)
   <div class="banner-top" style='background-image: url("/resize/1905/768?img={{$slide->image}}"); width: 100%; display: flex; align-items: end;'>
     <div class="banner-info_agile_w3ls">
-      <h3>{{ $slide->title }}</h3>
+      <h3>{!! $slide->title !!}</h3>
       @if($slide->link)
       <a href="{{$slide->link}}">Детальніше <i class="fa fa-caret-right ml-2" aria-hidden="true"></i></a>
       @endif

@@ -31,6 +31,7 @@ $white: #FFF;
 $green: #00BD52;
 $bg-green: #F3FCF5;
 $bg-gray: #F6F7FC;
+$red: #ff4441;
 
 /*-- Reset Code --*/
 body {
@@ -300,14 +301,11 @@ button.submit:hover {
 }
 
 
-.banner-info_agile_w3ls {
-    padding-top: 18em;
-}
 
 .banner-info_agile_w3ls h3 {
-    font-size: 56px;
-    color: $white;
-    letter-spacing: 1px;
+    font-size: 38px;
+    line-height: 1;
+    color: $red;
     font-weight: 600;
     text-shadow: $green 1px 1px;
 }
@@ -317,14 +315,9 @@ button.submit:hover {
     padding: 0 15px;
 }
 
-.banner-info_agile_w3ls p {
-    max-width: 900px;
-    color: #f3f3f3;
-}
-
 .banner-info_agile_w3ls a {
     color: $white;
-    padding: 13px 24px;
+    padding: 6px 16px;
     letter-spacing: 1px;
     font-size: 14px;
     background: $green;
@@ -1504,19 +1497,10 @@ label.col-form-label {
 
 @media(max-width: 1440px) {}
 
-@media(max-width: 1366px) {
-    .banner-info_agile_w3ls {
-        padding-top: 16em;
-    }
-}
 
 @media(max-width: 1280px) {
     .banner-info_agile_w3ls h3 {
-        font-size: 52px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 14em;
+        font-size: 34px;
     }
 }
 
@@ -1531,11 +1515,7 @@ label.col-form-label {
     }
 
     .banner-info_agile_w3ls h3 {
-        font-size: 48px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 13em;
+        font-size: 28px;
     }
 
     .welcome-left h3 {
@@ -1564,10 +1544,6 @@ label.col-form-label {
 
     .agileits-w3layouts-grid {
         margin-bottom: 3em;
-    }
-
-    .banner-info_agile_w3ls p {
-        max-width: 900px;
     }
 
     .da-thumbs li a div h5 {
@@ -1602,17 +1578,6 @@ label.col-form-label {
 @media(max-width: 1050px) {}
 
 @media(max-width: 1024px) {
-    .banner-info_agile_w3ls h3 {
-        font-size: 44px;
-    }
-
-    .banner-info_agile_w3ls p {
-        font-size: 14px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 12em;
-    }
 
     .map iframe {
         height: 300px;
@@ -1642,10 +1607,6 @@ label.col-form-label {
 
     .banner-left-bottom-w3ls p {
         font-size: 13px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 11em;
     }
 
     .banner-info_agile_w3ls a:hover,
@@ -1709,23 +1670,11 @@ label.col-form-label {
 
 @media(max-width: 900px) {
     .banner-info_agile_w3ls h3 {
-        font-size: 40px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 10em;
+        font-size: 24px;
     }
 }
 
 @media(max-width: 800px) {
-    .banner-info_agile_w3ls p {
-        font-size: 13px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 9em;
-    }
-
     .about p.aboutpara {
         font-size: 15px;
     }
@@ -1737,21 +1686,11 @@ label.col-form-label {
     }
 
     .banner-info_agile_w3ls h3 {
-        font-size: 35px;
-    }
-
-    .banner-info_agile_w3ls a {
-        padding: 12px 17px;
-        font-size: 13px;
+        font-size: 20px;
     }
 
     .navbar-brand {
         font-size: 38px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 7.5em;
-        margin: 0 2em;
     }
 
     .callbacks_tabs {
@@ -1761,10 +1700,6 @@ label.col-form-label {
 }
 
 @media(max-width: 736px) {
-    .banner-info_agile_w3ls h3 {
-        font-size: 31px;
-    }
-
     h6.text-white {
         font-size: 16px;
     }
@@ -1842,10 +1777,6 @@ label.col-form-label {
         padding: 8px 0;
     }
 
-    .banner-info_agile_w3ls {
-        padding-top: 6.5em;
-    }
-
     .callbacks_tabs {
         top: 35%;
     }
@@ -1863,24 +1794,12 @@ label.col-form-label {
         height: 60vw;
     }
 
-    .banner-info_agile_w3ls {
-        padding-top: 7.5em;
-    }
-
     .contact-right-w3l input[type="submit"] {
         font-size: 15px;
     }
 
     .comments-grid-right {
         margin: 0 !important;
-    }
-
-    .banner-info_agile_w3ls h3 {
-        font-size: 30px;
-    }
-
-    .banner-info_agile_w3ls {
-        margin: 0 2em 0 1.5em;
     }
 }
 
@@ -1896,31 +1815,19 @@ label.col-form-label {
     .comments-grid-right h4 {
         font-size: 22px;
     }
-
-    .banner-info_agile_w3ls h3 {
-        font-size: 28px;
-    }
 }
 
 @media(max-width: 480px) {
 
 
     .banner-info_agile_w3ls h3 {
-        font-size: 24px;
-    }
-
-    .banner-info_agile_w3ls h3 span {
-        padding: 0 10px;
+        font-size: 16px;
     }
 
     .banner-top1,
     .banner-top2,
     .banner-top3 {
         height: 74vw;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 6.5em;
     }
 
     .banner-left-bottom-w3ls h3 {
@@ -1992,9 +1899,6 @@ label.col-form-label {
         display: inline-block;
     }
 
-    .banner-info_agile_w3ls {
-        margin: 0 1.2em;
-    }
 }
 
 @media(max-width: 440px) {
@@ -2002,22 +1906,10 @@ label.col-form-label {
         padding-left: 9px !important;
     }
 
-    .banner-info_agile_w3ls p {
-        font-size: 12px;
-    }
-
-    .banner-info_agile_w3ls h3 {
-        font-size: 24px;
-    }
-
     .banner-top1,
     .banner-top2,
     .banner-top3 {
         height: 80vw;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 7em;
     }
 
     .d-flex.container {
@@ -2068,9 +1960,7 @@ label.col-form-label {
         font-size: 14px;
     }
 
-    .banner-info_agile_w3ls h3 {
-        font-size: 21px;
-    }
+
 
     .navbar-brand {
         font-size: 34px;
@@ -2078,15 +1968,6 @@ label.col-form-label {
 }
 
 @media(max-width: 414px) {
-
-    .banner-info_agile_w3ls h3 {
-        font-size: 28px;
-        line-height: 1.5;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 5.5em;
-    }
 
     .banner-top1,
     .banner-top2,
@@ -2159,9 +2040,6 @@ label.col-form-label {
         font-size: 14px;
     }
 
-    .banner-info_agile_w3ls {
-        padding-top: 5em;
-    }
 
     .callbacks_tabs {
         top: 86%;
@@ -2185,9 +2063,6 @@ label.col-form-label {
 }
 
 @media(max-width: 375px) {
-    .banner-info_agile_w3ls {
-        padding-top: 5em;
-    }
 
     .welcome-right img {
         width: 100%;
@@ -2215,27 +2090,10 @@ label.col-form-label {
         font-size: 19px;
     }
 
-    .banner-info_agile_w3ls h3 {
-        font-size: 23px;
-    }
-
     .banner-top1,
     .banner-top2,
     .banner-top3 {
         height: 114vw;
-    }
-
-    .banner-info_agile_w3ls a {
-        padding: 11px 14px;
-        font-size: 12px;
-    }
-
-    .banner-info_agile_w3ls a {
-        padding: 11px 14px;
-    }
-
-    .banner-info_agile_w3ls {
-        padding-top: 4.5em;
     }
 
     .welcome-left h3 {
