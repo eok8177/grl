@@ -8,7 +8,7 @@
     <div class="banner-info_agile_w3ls">
       <h3>{!! $slide->title !!}</h3>
       @if($slide->link)
-      <a href="{{$slide->link}}">Детальніше <i class="fa fa-caret-right ml-2" aria-hidden="true"></i></a>
+      <a href="{{$slide->link}}" class="mt-2">Детальніше <i class="fa fa-caret-right ml-2" aria-hidden="true"></i></a>
       @endif
     </div>
   </div>
