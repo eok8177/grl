@@ -188,7 +188,7 @@
       <div class="col-md-4 pricing"">
         <a href="{{route('front.page', $page->slug)}}">
           <div class="price-top">
-            <img src="/resize/350/232?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
+            <img src="/resize/450/280?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
           </div>
           <div class="price-bottom p-4">
             <h4 class="text-dark mb-3" style="height: 64px;overflow: hidden;">{{$page->title}}</h4>
@@ -215,7 +215,7 @@
     <div class="row about_grids mt-5">
       @foreach($pages as $page)
       <div class="col-lg-4" v-for="item in pages">
-        <img src="/resize/350/232?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
+        <img src="/resize/450/280?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
         <h3 class="mt-3 text-dark" style="height: 56px;overflow: hidden;">{{$page->title}}</h3>
         <div class="my-3" style="height: 60px;overflow: hidden;">{!! $page->preview !!}</div>
         <a href="{{route('front.page', $page->slug)}}">Детальніше</a>

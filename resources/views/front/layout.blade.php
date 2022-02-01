@@ -9,7 +9,7 @@
 
   <meta name="description" content="Голопристанська районна лікарня" />
 
-  <link rel="stylesheet" href="/css/front.css?v=1.003" type="text/css" media="all" />
+  <link rel="stylesheet" href="/css/front.css?v=1.004" type="text/css" media="all" />
 
   <link rel="stylesheet" href="/css/fontawesome-all.css">
 

@@ -40,7 +40,7 @@
 
           @foreach($doctors as $doctor)
           <div class="col-md-4 team-grids text-center mb-4" @if($doctor->text) type="button" data-toggle="modal" data-target="#doctor_{{$doctor->id}}" @endif>
-            <img src="/resize/340/388?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
+            <img src="/resize/450/400?img={{$doctor->image}}" alt="{{$doctor->title}}" class="img-fluid" />
             <div class="team-info">
               <div class="caption">
                 <h4>{{$doctor->title}}</h4>
@@ -88,7 +88,7 @@
     <div class="row about_grids mt-5">
       @foreach($pages as $page)
       <div class="col-lg-4" v-for="item in pages">
-        <img src="/resize/350/232?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
+        <img src="/resize/450/280?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
         <h3 class="mt-3 text-dark" style="height: 56px;overflow: hidden;">{{$page->title}}</h3>
         <div class="my-3" style="height: 60px;overflow: hidden;">{!! $page->preview !!}</div>
         <a href="{{route('front.page', $page->slug)}}">Детальніше</a>
