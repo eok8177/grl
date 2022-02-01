@@ -52,7 +52,7 @@
     <div class="row why-choose-agile-grids-top">
       <div class="col-lg-4 agileits-w3layouts-grid">
 
-        <div class="row wthree_agile_us my-3">
+        <div class="row wthree_agile_us mb-3">
           <div class="col-3 agile-why-text p-0 text-right">
             <div class="wthree_features_grid">
               <i class="fas fa-medkit"></i>
