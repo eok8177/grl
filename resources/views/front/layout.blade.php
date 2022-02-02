@@ -32,6 +32,11 @@
 
   @php
     $categories = App\Models\PageCategory::where('published', 1)
+            ->where('in_menu', 0)
+            ->orderBy('id', 'asc')
+            ->get();
+    $menu_items = App\Models\PageCategory::where('published', 1)
+            ->where('in_menu', 1)
             ->orderBy('id', 'asc')
             ->get();
   @endphp
@@ -50,6 +55,11 @@
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul class="navbar-nav ml-lg-auto">
+              @foreach($menu_items as $menu_item)
+                <li class="nav-item mx-lg-4 my-lg-0 my-3">
+                  <a href="{{route('front.pages', $menu_item->slug)}}" class="nav-link">{{$menu_item->title}}</a>
+                </li>
+              @endforeach
               <li class="nav-item mx-lg-4 my-lg-0 my-3" active-class="active">
                 <a href="/about" class="nav-link">Про нас</a>
               </li>
