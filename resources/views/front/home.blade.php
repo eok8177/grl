@@ -177,14 +177,14 @@
 <div class="blog-w3ls py-5" id="blog">
   <div class="container py-xl-5 py-lg-3">
     <div class="w3ls-titles text-center mb-5">
-      <h3 class="title text-white">Поради лікарів</h3>
+      <h3 class="title text-white">Останні новини</h3>
       <span>
         <i class="fas fa-user-md text-white"></i>
       </span>
       {{-- <p class="mt-2 text-white">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> --}}
     </div>
     <div class="row package-grids mt-5">
-      @foreach($blog as $page)
+      @foreach($pages as $page)
       <div class="col-md-4 pricing"">
         <a href="{{route('front.page', $page->slug)}}">
           <div class="price-top">
@@ -204,7 +204,8 @@
   <div class="container py-xl-5 py-lg-3">
 
     <div class="w3ls-titles text-center mb-5">
-      <h3 class="title">Останні новини</h3>
+      {{-- <h3 class="title">Останні новини</h3> --}}
+      <h3 class="title">Поради лікарів</h3>
       <span>
         <i class="fas fa-user-md"></i>
       </span>
@@ -213,7 +214,15 @@
 
 
     <div class="row about_grids mt-5">
-      @foreach($pages as $page)
+{{--       @foreach($pages as $page)
+      <div class="col-lg-4" v-for="item in pages">
+        <img src="/resize/450/280?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
+        <h3 class="mt-3 text-dark" style="height: 56px;overflow: hidden;">{{$page->title}}</h3>
+        <div class="my-3" style="height: 60px;overflow: hidden;">{!! $page->preview !!}</div>
+        <a href="{{route('front.page', $page->slug)}}">Детальніше</a>
+      </div>
+      @endforeach --}}
+      @foreach($blog as $page)
       <div class="col-lg-4" v-for="item in pages">
         <img src="/resize/450/280?img={{$page->image}}" alt="{{$page->title}}" class="img-fluid" />
         <h3 class="mt-3 text-dark" style="height: 56px;overflow: hidden;">{{$page->title}}</h3>
