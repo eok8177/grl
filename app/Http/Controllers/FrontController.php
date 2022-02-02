@@ -68,7 +68,7 @@ class FrontController extends Controller
 
         return view('front.pages', [
             'category' => $category,
-            'pages' => $category->pages()->where('published', 1)->get()
+            'pages' => $category->pages()->where('published', 1)->get(),
             'categories' => $categories
         ]);
     }
