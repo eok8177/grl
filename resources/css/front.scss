@@ -293,12 +293,11 @@ button.submit:hover {
 .banner-top {
     height: 40vw;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: end;
     @media(max-width:767px) {
         height: 60vw;
     }
