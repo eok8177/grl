@@ -34,7 +34,7 @@
 
         <div class="posts-grids mt-4">
 
-          @foreach($category->pages as $page)
+          @foreach($pages as $page)
           <div class="row post">
             <div class="col-md-3 mb-3">
               <a href="{{route('front.page', $page->slug)}}">
